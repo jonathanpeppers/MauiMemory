@@ -17,6 +17,8 @@ public partial class Page4 : ContentPage
 
         _timer = new Timer(callback =>
         {
+            GC.Collect();
+
             Dispatcher.Dispatch(() =>
             {
                 Blinker.IsVisible = !Blinker.IsVisible;

@@ -1,4 +1,6 @@
-﻿namespace MauiMemory
+﻿using MauiMemory.Pages;
+
+namespace MauiMemory
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new Page4();// new AppShell();
         }
     }
 }
