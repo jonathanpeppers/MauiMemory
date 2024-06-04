@@ -7,6 +7,8 @@ public partial class Page3 : ContentPage
     private readonly INavigationService _navigation;
     private readonly ICounterService _counterService;
 
+    ~Page3() => Console.WriteLine("Page3 Destructor");
+
     public Page3(INavigationService navigation, ICounterService counterService)
     {
         InitializeComponent();

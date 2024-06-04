@@ -5,6 +5,9 @@ namespace MauiMemory.Pages;
 public partial class Page1 : ContentPage
 {
     private readonly INavigationService _navigation;
+
+    ~Page1() => Console.WriteLine("Page1 Destructor");
+
     public Page1(INavigationService navigation)
     {
         InitializeComponent();

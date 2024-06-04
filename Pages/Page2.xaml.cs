@@ -6,6 +6,9 @@ public partial class Page2 : ContentPage
 {
     private readonly INavigationService _navigation;
     private byte[] _big;
+
+    ~Page2() => Console.WriteLine("Page2 Destructor");
+
     public Page2(INavigationService navigation)
     {
         InitializeComponent();

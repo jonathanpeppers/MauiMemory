@@ -3,6 +3,9 @@ namespace MauiMemory.Pages;
 public partial class Page4 : ContentPage
 {
     private Timer? _timer;
+
+    ~Page4() => Console.WriteLine("Page4 Destructor");
+
     public Page4()
 	{
 		InitializeComponent();
